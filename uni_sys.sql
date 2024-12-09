@@ -57,8 +57,6 @@ create table student_grades (
     constraint grade_st_disc_fk foreign key (grade_id) references grades("id")
 );
 
-create sequence spec_seq start with 1 increment by 1;
-
 --Нанасяме информация в таблиците
 insert into specialties("id","name") values (1,'СИТ');
 insert into specialties("id","name") values (2,'КСТ');
